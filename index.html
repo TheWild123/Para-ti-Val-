@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carta Especial</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="youtubePlayer" style="display:none;">
+        <iframe id="video" width="0" height="0" src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+
+    <div class="letter-container">
+        <div class="letter" id="letter">
+            <div class="front">
+                <div class="heart">❤️</div>
+                <p class="text">Haz clic para abrir</p>
+            </div>
+            <div class="back"></div>
+        </div>
+        <div class="button-and-image">
+            <button id="openButton">Abrir Carta</button>
+            <div class="image-box">
+                <img src="Val.jpeg" alt="Imagen decorativa" />
+            </div>
+        </div>
+    </div>
+
+    <div class="card hidden" id="card">
+        <h1>💌 Para Ti 💌</h1>
+        <p id="message">Haz clic para descubrir un mensaje especial.</p>
+        <button onclick="generateMessage()">Clickeame</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
